@@ -190,7 +190,8 @@ a {
   };
 
   var closeKlaxonBookmarklet = function() {
-    parent.window.postMessage("close_klaxon_bookmarklet", "*");
+    //window.postMessage("close_klaxon_bookmarklet", "*");
+    window.close();
   }
   document.getElementById("klax-close-bookmarklet").addEventListener('click', closeKlaxonBookmarklet, false);
 
